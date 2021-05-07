@@ -14,6 +14,7 @@ const Header =({isLoggedIn,setIsLoggedIn})=> {
       credentials:'include'});
       setIsLoggedIn(false);
       
+      
     }
     catch(error)
     {
@@ -23,13 +24,14 @@ const Header =({isLoggedIn,setIsLoggedIn})=> {
     localStorage.setItem('data',JSON.stringify(isLoggedIn))
   
   let menu;
+
   if(isLoggedIn){
     menu=(
       <>
        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     
-    <Nav className="ml-auto">
+    <Nav className="ms-auto">
         
      <LinkContainer to='/login'><Nav.Link  onClick={logout}>Log Out</Nav.Link></LinkContainer>
    
@@ -45,7 +47,7 @@ const Header =({isLoggedIn,setIsLoggedIn})=> {
          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     
-    <Nav className="ml-auto">
+    <Nav className="ms-auto">
         
      <LinkContainer to='/login'><Nav.Link>Log In</Nav.Link></LinkContainer>
    

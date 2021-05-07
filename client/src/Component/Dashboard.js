@@ -16,7 +16,7 @@ const Dashboard=({isLoggedIn,setIsLoggedIn})=>{
         withCredentials:true
       });
       setIsLoggedIn(true)
-      //  localStorage.setItem('data',JSON.stringify(isLoggedIn))
+        localStorage.setItem('data',true)
       
       
       // ...
@@ -38,6 +38,7 @@ const Dashboard=({isLoggedIn,setIsLoggedIn})=>{
     return (
         <div>
           <br/>
+          
           {isLoggedIn ?
             <h1>Welcome</h1>:
             <Alert  variant="danger">

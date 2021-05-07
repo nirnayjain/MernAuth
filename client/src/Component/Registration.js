@@ -96,7 +96,7 @@ import {GoogleLogin} from 'react-google-login'
 import {GoogleButton} from 'react-google-button'
 import {Alert} from 'react-bootstrap'
 import {useHistory,Link} from 'react-router-dom'
-import dotenv from 'dotenv'
+
 
  const Register = () => {
    const history=useHistory()
@@ -175,7 +175,7 @@ import dotenv from 'dotenv'
             <TextField label="Email" name="email" type="email" />
             <TextField label="Password" name="password" type="password" />
             
-            <button className="btn btn-dark mt-3" type="submit"  style={{width:'40%',marginLeft:"8%"}}>Register</button>
+            <button className="btn btn-dark mt-3" type="submit"  style={{width:'40%',marginLeft:"8%",marginRight:"2%"}}>Register</button>
             <button className="btn btn-danger mt-3 ml-3" type="reset" onClick={()=>setIsRegistered(false)}
              style={{width:'40%'}}>Reset</button>
           </Form>
